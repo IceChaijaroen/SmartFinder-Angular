@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="search">
+        <div class="input-group">
+            <input type="search" [(ngModel)]="searchText" class="form-control rounded" placeholder="Search" aria-label="Search"
+                aria-describedby="search-addon" />
+            <button type="button" class="btn btn-outline-primary" (click)="setSearch()">ล้าง</button>
+        </div>
+    </div>
+    <div class="detail">
+        <div class="card-content">
+            <div class="card" *ngFor="let data of data | filter:searchText">
+                <img class="image" width="80%" height="180" src="{{data.PropertyLogo}}">
+                <div class="center">
+                    <h5 class="text">{{data.Location}}</h5>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
