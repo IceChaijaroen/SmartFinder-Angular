@@ -24,8 +24,15 @@
 
 .button{
     width: 100%;
+    background-color: aqua;
+    right: 0px;
 }
 
+.button-right{
+    width: 20%;
+    right: 0px;
+    background-color: yellowgreen;
+}
 
 .form-check{
     width: 100%;
